@@ -1,5 +1,4 @@
 import os
-from constants import openai_key
 from langchain.llms import OpenAI
 import streamlit as st
 import spacy
@@ -7,7 +6,7 @@ from langchain import PromptTemplate
 from langchain.chains import LLMChain
 
 from langchain.chains import SimpleSequentialChain
-
+openai_key='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'
 os.environ["OPENAI_API_KEY"] = openai_key
 # nlp = spacy.load("en_core_web_sm")
 
